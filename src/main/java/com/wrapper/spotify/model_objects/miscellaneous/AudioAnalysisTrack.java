@@ -706,7 +706,7 @@ public class AudioAnalysisTrack extends AbstractModelObject {
                               ? jsonObject.get("loudness").getAsFloat()
                               : null)
               .setMode(
-                      hasAndNotNull(jsonObject, "type")
+                      hasAndNotNull(jsonObject, "mode")
                               ? Modality.keyOf(
                               jsonObject.get("mode").getAsInt())
                               : null)
@@ -755,8 +755,8 @@ public class AudioAnalysisTrack extends AbstractModelObject {
                               ? jsonObject.get("tempo_confidence").getAsFloat()
                               : null)
               .setTimeSignature(
-                      hasAndNotNull(jsonObject, "time_sidnature")
-                              ? jsonObject.get("time_sidnature").getAsInt()
+                      hasAndNotNull(jsonObject, "time_signature")
+                              ? jsonObject.get("time_signature").getAsInt()
                               : null)
               .setTimeSignatureConfidence(
                       hasAndNotNull(jsonObject, "time_signature_confidence")
