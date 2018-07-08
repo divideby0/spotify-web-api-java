@@ -292,7 +292,7 @@ public class AudioAnalysisSection extends AbstractModelObject {
               .setMeasure(
                       new AudioAnalysisMeasure.JsonUtil().createModelObject(jsonObject))
               .setMode(
-                      hasAndNotNull(jsonObject, "type")
+                      hasAndNotNull(jsonObject, "mode")
                               ? Modality.keyOf(
                               jsonObject.get("mode").getAsInt())
                               : null)
