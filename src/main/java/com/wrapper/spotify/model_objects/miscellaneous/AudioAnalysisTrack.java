@@ -690,8 +690,8 @@ public class AudioAnalysisTrack extends AbstractModelObject {
                               ? jsonObject.get("echoprint_version").getAsFloat()
                               : null)
               .setEndOfFadeIn(
-                      hasAndNotNull(jsonObject, "end_of_face_in")
-                              ? jsonObject.get("end_of_face_in").getAsFloat()
+                      hasAndNotNull(jsonObject, "end_of_fade_in")
+                              ? jsonObject.get("end_of_fade_in").getAsFloat()
                               : null)
               .setKey(
                       hasAndNotNull(jsonObject, "key")
@@ -763,8 +763,8 @@ public class AudioAnalysisTrack extends AbstractModelObject {
                               ? jsonObject.get("time_signature_confidence").getAsFloat()
                               : null)
               .setWindowSeconds(
-                      hasAndNotNull(jsonObject, "windows_seconds")
-                              ? jsonObject.get("windows_seconds").getAsInt()
+                      hasAndNotNull(jsonObject, "window_seconds")
+                              ? jsonObject.get("window_seconds").getAsInt()
                               : null)
               .build();
     }
